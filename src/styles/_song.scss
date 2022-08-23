@@ -1,0 +1,50 @@
+.song-container {
+  margin: 0 auto;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  h2 {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  h3 {
+    padding: 1rem;
+  }
+}
+
+.aylana {
+  animation-name: aylanay;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.stop {
+  animation-play-state: paused;
+}
+@keyframes aylanay {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    width: 75%;
+    text-align: center;
+
+    img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+    }
+  }
+}
